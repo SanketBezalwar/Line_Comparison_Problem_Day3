@@ -16,6 +16,7 @@ public class Line_Comparison {
 		l1.lengthOfLine1();
 		l1.lengthOfLine2();
 		l1.lengthEquality();
+		l1.lineCompare();
 	}
 
 	// calculate length of line1
@@ -75,6 +76,17 @@ public class Line_Comparison {
 		else
 			System.out.println("The two Lines are not Equal");
 		System.out.println();
+	}
+
+	// comparing two lines
+	public void lineCompare() {
+		System.out.println("Comparison Result : ");
+		if (line1 > line2)
+			System.out.println("Line1 is Greater than Line2");
+		else if (line1 == line2)
+			System.out.println("Both the Lines are Equal");
+		else
+			System.out.println("Line2 is Greater than Line1");
 	}
 
 }
